@@ -11,14 +11,6 @@ const routes: Array<RouteConfig> = [
     component: Home,
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
-  },
-  {
     path: '/touxiang',
     name: 'touxiang',
     component: () => import(/* webpackChunkName: "touxiang" */ '../views/Touxiang.vue'),
@@ -57,6 +49,51 @@ const routes: Array<RouteConfig> = [
     path: '/ps',
     name: 'ps',
     component: () => import(/* webpackChunkName: "ps" */ '../views/Ps.vue'),
+  },
+  {
+    path: '/layout',
+    name: 'layout',
+    component: () => import(/* webpackChunkName: "layout" */ '../views/Layout.vue'),
+  },
+  {
+    path: '/loading',
+    name: 'loading',
+    component: () => import(/* webpackChunkName: "loading" */ '../views/Loading.vue'),
+  },
+  {
+    path: '/hoverTips',
+    name: 'hoverTips',
+    component: () => import(/* webpackChunkName: "hoverTips" */ '../views/HoverTips.vue'),
+  },
+  {
+    path: '/stateBall',
+    name: 'stateBall',
+    component: () => import(/* webpackChunkName: "StateBall" */ '../views/StateBall.vue'),
+  },
+  {
+    path: '/navbar',
+    name: 'navbar',
+    component: () => import(/* webpackChunkName: "Navbar" */ '../views/Navbar.vue'),
+  },
+  {
+    path: '/aspect',
+    name: 'aspect',
+    component: () => import(/* webpackChunkName: "Aspect" */ '../views/AspectRatio.vue'),
+  },
+  {
+    path: '/clock',
+    name: 'clock',
+    component: () => import(/* webpackChunkName: "Clock" */ '../views/Clock/index.vue'),
+  },
+  {
+    path: '/threeCrossbar',
+    name: 'threeCrossbar',
+    component: () => import(/* webpackChunkName: "threeCrossbar" */ '../views/ThreeCrossbar.vue'),
+  },
+  {
+    path: '/sticky',
+    name: 'sticky',
+    component: () => import(/* webpackChunkName: "sticky" */ '../views/Sticky.vue'),
   },
 ]
 
